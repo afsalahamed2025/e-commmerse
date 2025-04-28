@@ -44,7 +44,9 @@ p {
 .section-p1 {
   padding: 40px 80px;
 }
-
+.logo{
+  width: 85px;
+}
 .section-m1 {
   margin: 40px 0;
 }
@@ -96,9 +98,7 @@ body {
   color: #1a1a1a;
   transition: 0.3s ease;
 }
-#navbar li a:hover {
-  color: #088178;
-}
+
 #navbar li a:hover,
 #navbar li a.active {
   color: #088178;
@@ -106,7 +106,7 @@ body {
 
 #navbar li a.active::after {
   content: "";
-  width: 59%;
+  width: 50%;
   height: 4px;
   background: #088178;
   position: absolute;
@@ -133,7 +133,8 @@ body {
 }
 
 #navbar li a:hover::after {
-  width: 60%;
+  align-items: center;
+  width: 50%;
   
   
 }
@@ -144,6 +145,7 @@ body {
 }
 
 #close {
+  
   display: none;
 }
 
@@ -589,7 +591,16 @@ footer a:hover {
 
   #mobile {
     display: flex;
+    gap: .5rem;
     align-items: center;
+    img{
+
+      width: 30px;
+    }
+    a > img{
+      width: 28px;
+    }
+  
   }
 
   #mobile i {
@@ -610,6 +621,9 @@ footer a:hover {
   #lg-bag {
     display: none;
   }
+
+  
+  
 
   #hero {
     
@@ -1012,7 +1026,7 @@ footer a:hover {
 
 /* ************** CONTACT PAGE************** */
 #page-header.contact-header{
-  background-image: url("img/contact/support.png ");
+  background-image: url("img/contact/kevin-delvecchio-7noZJ_4nhU8-unsplash.jpg ");
 }
 #contact-details {
   display: flex;
@@ -1124,6 +1138,7 @@ footer a:hover {
 
 /**************** RESPONSIVE CONTACT*********** */
 @media (max-width: 477px) {
+
   #contact-details {
     flex-direction: column;
   }

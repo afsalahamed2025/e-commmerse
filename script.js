@@ -15,7 +15,6 @@ if (bar) {
 }
 
 /* ************ */
-
 /* meeaage */
 document
   .getElementById("contactForm")

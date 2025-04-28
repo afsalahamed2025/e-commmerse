@@ -15,45 +15,72 @@
 
   <body>
     <section id="header">
-      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+      <a href="index.html"><img src="img/logo.png" class="logo" /></a>
       <div>
         <ul id="navbar">
           <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li id="lg-bag">
-            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <a class="active" href="cart.html"
+              ><img src="./img/cart.png" alt=""
+            /></a>
           </li>
-          <a href="# " id="close"><i class="fa-solid fa-xmark"></i></a>
+          <a href="# " id="close"><img src="./img/closeIcon.png" alt="" /></a>
         </ul>
       </div>
       <div id="mobile">
-        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-        <i id="bar" class="fas fa-outdent"></i>
+        <a href="cart.html"><img src="./img/cart.png" alt="" /></a>
+        <img src="./img/menu.png" alt="" id="bar" />
       </div>
     </section>
 
     <section id="prodetails" class="section-p1">
       <div class="single-pro-image">
-        <img src="img/products/f1.png" width="100%" id="MainImg" alt="Men's Cotton-Linen Beach Shirt" />
+        <img
+          src="img/products/f1.png"
+          width="100%"
+          id="MainImg"
+          alt="Men's Cotton-Linen Beach Shirt"
+        />
         <div class="small-img-group">
           <div class="small-img-col">
-            <img src="img/products/f1.png" width="100%" class="small-img" alt="Front View" />
+            <img
+              src="img/products/f1.png"
+              width="100%"
+              class="small-img"
+              alt="Front View"
+            />
           </div>
           <div class="small-img-col">
-            <img src="img/products/f2.png" width="100%" class="small-img" alt="Back View" />
+            <img
+              src="img/products/f2.png"
+              width="100%"
+              class="small-img"
+              alt="Back View"
+            />
           </div>
           <div class="small-img-col">
-            <img src="img/products/f3.png" width="100%" class="small-img" alt="Close-Up View" />
+            <img
+              src="img/products/f3.png"
+              width="100%"
+              class="small-img"
+              alt="Close-Up View"
+            />
           </div>
           <div class="small-img-col">
-            <img src="img/products/f4.png" width="100%" class="small-img" alt="Shirt on Model" />
+            <img
+              src="img/products/f4.png"
+              width="100%"
+              class="small-img"
+              alt="Shirt on Model"
+            />
           </div>
         </div>
       </div>
-    
+
       <div class="single-pro-details">
         <h6><a href="index.html">Home</a> / Shirts</h6>
         <h4>Men's Fashion Shirts</h4>
@@ -69,20 +96,36 @@
             <option value="Medium">Medium</option>
             <option value="Small">Small</option>
           </select>
-    
+
           <label for="quantity">Quantity:</label>
-          <input type="number" id="quantity" name="quantity" value="1" min="1" required />
-    
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            value="1"
+            min="1"
+            required
+          />
+
           <button type="submit" class="white">Add To Cart</button>
         </form>
-    
+
         <h4>Product Details</h4>
         <p>
-          Stay cool and stylish this summer with our premium Men’s Cotton-Linen Beach Shirt, the perfect addition to your coastal wardrobe. Crafted from a breathable blend of 60% cotton and 40% linen, this lightweight shirt offers all-day comfort and effortless style. Designed with a relaxed fit, short sleeves, and a button-down front, it's ideal for layering over swimwear or pairing with casual shorts. The banded collar and chest pocket add a touch of laid-back sophistication, while the natural fabric ensures quick drying and minimal wrinkling. Whether you're lounging by the shore or heading to a beachside café, this versatile piece blends functionality with beach-ready fashion.
+          Stay cool and stylish this summer with our premium Men’s Cotton-Linen
+          Beach Shirt, the perfect addition to your coastal wardrobe. Crafted
+          from a breathable blend of 60% cotton and 40% linen, this lightweight
+          shirt offers all-day comfort and effortless style. Designed with a
+          relaxed fit, short sleeves, and a button-down front, it's ideal for
+          layering over swimwear or pairing with casual shorts. The banded
+          collar and chest pocket add a touch of laid-back sophistication, while
+          the natural fabric ensures quick drying and minimal wrinkling. Whether
+          you're lounging by the shore or heading to a beachside café, this
+          versatile piece blends functionality with beach-ready fashion.
         </p>
       </div>
     </section>
-    
+
     <section id="product1" class="section-p1">
       <h2>Featured Products</h2>
       <p>Summer Collection New Morden Design</p>
@@ -181,10 +224,18 @@
         <div class="follow">
           <h4>Follow us</h4>
           <div class="icon">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://www.whatsapp.com/"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -241,11 +292,11 @@
         MainImg.src = smallimg[3].src;
       };
       /* *************SAME CODE CLICK IMG CHANGE ************* */
-    //   for (var i = 0; i < smallimg.length; i++) {
-    //         smallimg[i].addEventListener("click", function() {
-    //             MainImg.src = this.src;
-    //         })
-    //     }
+      //   for (var i = 0; i < smallimg.length; i++) {
+      //         smallimg[i].addEventListener("click", function() {
+      //             MainImg.src = this.src;
+      //         })
+      //     }
     </script>
 
     <script src="script.js"></script>
